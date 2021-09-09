@@ -126,8 +126,8 @@ if uploaded_file is not None:
     st.markdown(filedownload(pred), unsafe_allow_html=True)
     st.write("Total machines that would require maintainence")
     st.info(tp)
-    st.write("Assuming maintenance cost /machine to be ₹10,000. Total Probable Cost to be incurred will be:")
-    st.info(10000*tp)
+    st.write("Assuming maintenance cost /machine to be ₹30,000. Total Probable Cost to be incurred will be:")
+    st.info(30000*tp)
     st.write("Act immediately to avoid any further deterioration.")
 else:
     st.info("Awaiting for CSV file to be uploaded.")
