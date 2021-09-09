@@ -126,7 +126,7 @@ if uploaded_file is not None:
     st.markdown(filedownload(pred), unsafe_allow_html=True)
     st.write("Total machines that would require maintainence")
     st.info(tp)
-    st.write("Assuming maintenance cost /machine to be ₹30,000. Total Probable Cost to be incurred will be:")
+    st.write("Assuming maintenance cost /machine to be $30,000. Total Probable Cost to be incurred will be:")
     cost = 30000*tp
     st.info(f"{cost:,d}")
     st.write("Act immediately to avoid any further deterioration.")
