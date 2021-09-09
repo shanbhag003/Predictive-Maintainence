@@ -127,7 +127,8 @@ if uploaded_file is not None:
     st.write("Total machines that would require maintainence")
     st.info(tp)
     st.write("Assuming maintenance cost /machine to be ₹30,000. Total Probable Cost to be incurred will be:")
-    st.info(30000*tp)
+    cost = 30000*tp
+    st.info(f"{cost:,d}")
     st.write("Act immediately to avoid any further deterioration.")
 else:
     st.info("Awaiting for CSV file to be uploaded.")
